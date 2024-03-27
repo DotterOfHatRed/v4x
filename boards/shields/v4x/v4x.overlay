@@ -1,7 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-&xiao_serial { status = "disabled"; };
-
 &xiao_spi {
 	status = "okay";
 	cs-gpios = <&xiao_d 4 GPIO_ACTIVE_LOW>;
