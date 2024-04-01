@@ -89,6 +89,7 @@
                 AS(SEMI)  AS(N4) AS(N5) AS(N6) AS(N0)     AS(BACKSLASH) &kp F4 &kp F5 &kp F6 &kp F11
                 &kp PSCRN AS(N1) AS(N2) AS(N3) AS(MINUS)  &none &kp F1 &kp F2 &kp F3 &kp F12
                     &trans &trans &trans AS(LEFT_BRACKET) AS(RIGHT_BRACKET)
+                >;
         };
 
         gaming_layer {
