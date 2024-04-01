@@ -65,7 +65,7 @@
 
         base_layer {
             bindings = <
-                       &to BAS_L    &to GAME_L &to DIABLO_L &kc LC(C) &kc LC(V)
+                       &to BAS_L    &to GAME_L &to DIABLO_L &kp LC(C) &kp LC(V)
                 &kp Q         &kp W         &kp F          &kp P           &kp B       &kp J      &kp L          &kp U          &kp Y         &kp QUOT
                 &hml LGUI A   &hml LALT R   &hml LCTRL S   &hml LSHFT T    &kp G       &kp M      &hmr LSHFT N   &hmr LCTRL E   &hmr LALT I   &hmr LGUI O   
                 &kp Z         &kp X         &kp C          &kp D           &kp V       &kp K      &kp H          &kp COMMA      &kp DOT       &kp FSLH
