@@ -117,7 +117,7 @@
                 &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &lt ARTSEY_L A &kp R &kp T &lt ARTSEY_L S
                 &trans &trans &trans &trans &trans &trans &lt ARTSEY_L E &kp Y &kp I &lt ARTSEY_L O
-                &trans &trans &trans &trans &trans &trans &none &none &none &trans
+                &trans &trans &trans &trans &trans &trans &bootloader &none &none &trans
                 &trans &trans &trans &trans &trans
                 >;
         };
