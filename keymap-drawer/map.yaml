@@ -122,13 +122,13 @@ layers:
   diablo:
   - [LALT, M, A, T, F5, Q, W, E, R, '`']
   - [O, KP 7, KP 8, KP 9, RETURN, '1', '2', '3', '4', '5']
-  - ['6', KP 4, KP 5, KP 6, KP 0, ESC, P, J, I, C]
+  - ['6', KP 4, KP 5, KP 6, KP 0, LCTRL, P, J, I, C]
   - - Z
     - KP 1
     - KP 2
     - KP 3
     - {t: artsey_base, h: toggle}
-    - LCTRL
+    - ESC
     - {t: X, h: diablo_ii}
     - LSHIFT
     - {t: gaming, h: toggle}
@@ -215,3 +215,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+combos:
+- p: [5, 14, 25, 34]
+  k: '&bootloader'
+- p: [34, 39]
+  k: DEL
+  l: [base]
