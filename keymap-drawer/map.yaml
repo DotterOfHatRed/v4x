@@ -1,0 +1,217 @@
+layout: {qmk_info_json: info.json}
+layers:
+  base:
+  - - {t: base, h: toggle}
+    - {t: gaming, h: toggle}
+    - {t: diablo, h: toggle}
+    - LC(C)
+    - LC(V)
+    - Q
+    - W
+    - F
+    - P
+    - B
+  - - J
+    - L
+    - U
+    - Y
+    - QUOT
+    - {t: A, h: LGUI}
+    - {t: R, h: LALT}
+    - {t: S, h: LCTRL}
+    - {t: T, h: LSHFT}
+    - G
+  - - M
+    - {t: N, h: LSHFT}
+    - {t: E, h: LCTRL}
+    - {t: I, h: LALT}
+    - {t: O, h: LGUI}
+    - Z
+    - X
+    - C
+    - D
+    - V
+  - - K
+    - H
+    - ','
+    - .
+    - /
+    - ESC
+    - {t: SPACE, h: navigate}
+    - {t: TAB, h: number}
+    - RET
+    - BKSP
+  navigate:
+  - - {t: ▽, type: trans}
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - VOL DN
+    - VOL UP
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_DOWN'
+    - '&mmv MOVE_UP'
+    - '&mmv MOVE_RIGHT'
+    - HOME
+  - [PG UP, MUTE, VOL DN, VOL UP, '', LEFT, DOWN, UP, RIGHT, OUT USB]
+  - [OUT BLE, LSHFT, LCTRL, LALT, LGUI, '&msc SCRL_LEFT', '&msc SCRL_DOWN', '&msc SCRL_UP', '&msc SCRL_RIGHT', END]
+  - - PG DN
+    - '&caps_word'
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - '&mkp LCLK'
+    - '&mkp MCLK'
+    - '&mkp RCLK'
+  number:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: '`', h: LS(GRAVE)}
+    - {t: '7', h: LS(7)}
+    - {t: '8', h: LS(8)}
+    - {t: '9', h: LS(9)}
+    - {t: LS(EQUAL), h: '='}
+  - - ''
+    - F7
+    - F8
+    - F9
+    - F10
+    - {t: ;, h: LS(SEMI)}
+    - {t: '4', h: LS(4)}
+    - {t: '5', h: LS(5)}
+    - {t: '6', h: LS(6)}
+    - {t: '0', h: LS(0)}
+  - - {t: \, h: LS(BACKSLASH)}
+    - F4
+    - F5
+    - F6
+    - F11
+    - PSCRN
+    - {t: '1', h: LS(1)}
+    - {t: '2', h: LS(2)}
+    - {t: '3', h: LS(3)}
+    - {t: '-', h: LS(MINUS)}
+  - - ''
+    - F1
+    - F2
+    - F3
+    - F12
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: '[', h: LS(LEFT BRACKET)}
+    - {t: ']', h: LS(RIGHT BRACKET)}
+  gaming:
+  - ['1', '2', '3', '4', '5', TAB, Q, W, E, R]
+  - [T, '[', UP, ']', BACKSPACE, LSHIFT, A, S, D, F]
+  - [G, LEFT, DOWN, RIGHT, RETURN, ESC, Z, X, C, V]
+  - - B
+    - VOL DN
+    - MUTE
+    - VOL UP
+    - {t: artsey_base, h: toggle}
+    - LCTRL
+    - SPACE
+    - LALT
+    - {t: diablo, h: toggle}
+    - {t: base, h: toggle}
+  diablo:
+  - [LALT, M, A, T, F5, Q, W, E, R, '`']
+  - [O, KP 7, KP 8, KP 9, RETURN, '1', '2', '3', '4', '5']
+  - ['6', KP 4, KP 5, KP 6, KP 0, ESC, P, J, I, C]
+  - - Z
+    - KP 1
+    - KP 2
+    - KP 3
+    - {t: artsey_base, h: toggle}
+    - LCTRL
+    - {t: X, h: diablo_ii}
+    - LSHIFT
+    - {t: gaming, h: toggle}
+    - {t: base, h: toggle}
+  diablo_ii:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '7'
+    - '8'
+    - '9'
+    - '0'
+    - INS
+  - - '='
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  artsey_base:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: A, h: artsey_base}
+    - R
+    - T
+    - {t: S, h: artsey_base}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: E, h: artsey_base}
+    - Y
+    - I
+    - {t: O, h: artsey_base}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - '&bootloader'
+    - ''
+    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
