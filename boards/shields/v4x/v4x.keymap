@@ -77,10 +77,10 @@
         navigate_layer {
             bindings = <
                 &trans &bt BT(0) &bt BT(1) &kp C_VOL_DN &kp C_VOL_UP
-                &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp HOME     &kp PG_UP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &none
+                &none &none &none &none &kp HOME     &kp PG_UP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &none
                 &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT       &out OUT_USB &out OUT_BLE &kp LSHFT &kp LCTRL    &kp LALT     &kp LGUI
-                &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &kp END      &kp PG_DN    &caps_word &bt BT(0)    &bt BT(1)    &bt BT(2)     
-                                              &trans       &trans          &mkp LCLK &mkp MCLK &mkp RCLK 
+                &none &none &none &none &kp END      &kp PG_DN    &caps_word &bt BT(0)    &bt BT(1)    &bt BT(2)
+                                              &trans       &trans          &none &none &none
                 >;
         };
 
