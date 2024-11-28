@@ -205,8 +205,8 @@
         combo_tw_angle_l   { timeout-ms = <50>; key-positions = <16 28>; bindings = <&kp LT>; layers = <BAS_TW_L>; };
         combo_tw_angle_r   { timeout-ms = <50>; key-positions = <22 30>; bindings = <&kp GT>; layers = <BAS_TW_L>; };
 
-        combo_tw_v         { timeout-ms = <50>; key-positions = <21 30>; bindings = <&kp V>; layers = <BAS_TW_L>; };
-        combo_tw_k         { timeout-ms = <50>; key-positions = <17 28>; bindings = <&kp K>; layers = <BAS_TW_L>; };
+        combo_tw_k         { timeout-ms = <50>; key-positions = <21 30>; bindings = <&kp K>; layers = <BAS_TW_L>; };
+        combo_tw_v         { timeout-ms = <50>; key-positions = <17 28>; bindings = <&kp V>; layers = <BAS_TW_L>; };
         combo_tw_backslash { timeout-ms = <50>; key-positions = <16 27>; bindings = <&kp BACKSLASH>; layers = <BAS_TW_L>; };
         combo_tw_slash     { timeout-ms = <50>; key-positions = <22 31>; bindings = <&kp FSLH>; layers = <BAS_TW_L>; };
 
