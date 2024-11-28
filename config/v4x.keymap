@@ -219,7 +219,7 @@
         combo_tw_backspace { timeout-ms = <50>; key-positions = <20 22>; bindings = <&kp BKSP>; layers = <BAS_TW_L>; };
         combo_tw_back_word { timeout-ms = <50>; key-positions = <20 23>; bindings = <&kp LC(BKSP)>; layers = <BAS_TW_L>; };
         combo_tw_delete    { timeout-ms = <50>; key-positions = <21 23>; bindings = <&kp DEL>; layers = <BAS_TW_L>; };
-        combo_tw_semicolon { timeout-ms = <50>; key-positions = <31 39>; bindings = <&kp SEMI>; layers = <BAS_TW_L>; };
+        combo_tw_semicolon { timeout-ms = <50>; key-positions = <32 39>; bindings = <&kp SEMI>; layers = <BAS_TW_L>; };
     };
 
 /*  0  1  2  3   4
