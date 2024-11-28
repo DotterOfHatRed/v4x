@@ -142,8 +142,8 @@
             bindings = <
                 &bootloader &none &none &none &to BAS_L
                 &none &none &none &none &none &none &none &none &none &none
-                &hml LGUI R &hml LALT S &hml LCTRL T &hml LSHFT H    &none    &hmr LSHFT N   &hmr LCTRL A   &hmr LALT I   &hmr LGUI O  &none
-                &kp GRAVE   &kp C       &kp G        &kp D           &none    &kp L          &kp U          &kp Y         &none     &none
+                &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHFT T    &none    &hmr LSHFT N   &hmr LCTRL E   &hmr LALT I   &hmr LGUI O  &none
+                &kp F   &kp P       &kp C        &kp D           &none    &kp H          &kp U          &kp Y         &kp QUOT     &none
                               &lt NUM_TW_L QUOT &lt NAV_TW_L SPACE &none &kp E &lt FUN_TW_L TAB
                 >;
         };
@@ -185,16 +185,16 @@
         combo_del { timeout-ms = <50>; key-positions = <34 39>; bindings = <&kp DEL>; layers = <BAS_L>; };
 
         combo_tw_w         { timeout-ms = <50>; key-positions = <15 16>; bindings = <&kp W>; layers = <BAS_TW_L>; };
-        combo_tw_m         { timeout-ms = <50>; key-positions = <16 17>; bindings = <&kp M>; layers = <BAS_TW_L>; };
+        combo_tw_g         { timeout-ms = <50>; key-positions = <16 17>; bindings = <&kp G>; layers = <BAS_TW_L>; };
         combo_tw_b         { timeout-ms = <50>; key-positions = <17 18>; bindings = <&kp B>; layers = <BAS_TW_L>; };
-        combo_tw_v         { timeout-ms = <50>; key-positions = <20 21>; bindings = <&kp V>; layers = <BAS_TW_L>; };
-        combo_tw_comma     { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp COMMA>; layers = <BAS_TW_L>; };
-        combo_tw_dot       { timeout-ms = <50>; key-positions = <22 23>; bindings = <&kp DOT>; layers = <BAS_TW_L>; };
+        combo_tw_j         { timeout-ms = <50>; key-positions = <20 21>; bindings = <&kp J>; layers = <BAS_TW_L>; };
+        combo_tw_l         { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp L>; layers = <BAS_TW_L>; };
+        combo_tw_m         { timeout-ms = <50>; key-positions = <22 23>; bindings = <&kp M>; layers = <BAS_TW_L>; };
 
-        combo_tw_f         { timeout-ms = <50>; key-positions = <26 27>; bindings = <&kp F>; layers = <BAS_TW_L>; };
-        combo_tw_p         { timeout-ms = <50>; key-positions = <27 28>; bindings = <&kp P>; layers = <BAS_TW_L>; };
-        combo_tw_x         { timeout-ms = <50>; key-positions = <30 31>; bindings = <&kp X>; layers = <BAS_TW_L>; };
-        combo_tw_z         { timeout-ms = <50>; key-positions = <31 32>; bindings = <&kp Z>; layers = <BAS_TW_L>; };
+        combo_tw_z         { timeout-ms = <50>; key-positions = <26 27>; bindings = <&kp Z>; layers = <BAS_TW_L>; };
+        combo_tw_x         { timeout-ms = <50>; key-positions = <27 28>; bindings = <&kp X>; layers = <BAS_TW_L>; };
+        combo_tw_comma     { timeout-ms = <50>; key-positions = <30 31>; bindings = <&kp COMMA>; layers = <BAS_TW_L>; };
+        combo_tw_dot       { timeout-ms = <50>; key-positions = <31 32>; bindings = <&kp DOT>; layers = <BAS_TW_L>; };
 
         combo_tw_paren_l   { timeout-ms = <50>; key-positions = <18 28>; bindings = <&kp LPAR>; layers = <BAS_TW_L>; };
         combo_tw_paren_r   { timeout-ms = <50>; key-positions = <20 30>; bindings = <&kp RPAR>; layers = <BAS_TW_L>; };
@@ -205,7 +205,7 @@
         combo_tw_angle_l   { timeout-ms = <50>; key-positions = <16 28>; bindings = <&kp LT>; layers = <BAS_TW_L>; };
         combo_tw_angle_r   { timeout-ms = <50>; key-positions = <22 30>; bindings = <&kp GT>; layers = <BAS_TW_L>; };
 
-        combo_tw_j         { timeout-ms = <50>; key-positions = <21 30>; bindings = <&kp J>; layers = <BAS_TW_L>; };
+        combo_tw_v         { timeout-ms = <50>; key-positions = <21 30>; bindings = <&kp V>; layers = <BAS_TW_L>; };
         combo_tw_k         { timeout-ms = <50>; key-positions = <17 28>; bindings = <&kp K>; layers = <BAS_TW_L>; };
         combo_tw_backslash { timeout-ms = <50>; key-positions = <16 27>; bindings = <&kp BACKSLASH>; layers = <BAS_TW_L>; };
         combo_tw_slash     { timeout-ms = <50>; key-positions = <22 31>; bindings = <&kp FSLH>; layers = <BAS_TW_L>; };
