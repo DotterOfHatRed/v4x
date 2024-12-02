@@ -194,7 +194,7 @@
             bindings = <
                 &to BAS_L &none &bootloader &none &to BAS_TW_L
                 &none &none &none &none &none &none &none &none &none &none
-                &kp N1 &kp N2 &kp N3 &kp N4 &none &kp O &kp P &kp  &kp RET &none
+                &kp N1 &kp N2 &kp N3 &kp N4 &none &kp O &kp P &kp H &kp RET &none
                 &kp LCTRL &kp I &kp X &kp C &none &kp Z &kp J &kp KP_N0 &kp KP_N3   &none
                 &kp LSHFT &lt DTWO_TW_L ESC &none &to GAME_L &to BAS_TW_L
                 >;
