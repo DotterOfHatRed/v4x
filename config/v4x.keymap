@@ -82,8 +82,6 @@
             bindings = <&kp>, <&kp>;
             flavor = "hold-preferred";
             tapping_term_ms = <200>;
-            retro-tap;
-
         };
     };
 
