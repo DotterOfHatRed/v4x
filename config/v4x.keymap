@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2024 Rooks
- * 
+ *
  * SPDX-License-Identifier: MIT
  */
 
@@ -22,7 +22,9 @@
 #define NAV_TW_L 7
 #define NUM_TW_L 8
 #define FUN_TW_L 9
-
+#define SEL_TW_L 10
+#define DONE_TW_L 11
+#define DTWO_TW_L 12
 
 
 /*  0  1  2  3   4
@@ -93,8 +95,8 @@
                 &trans &bt BT(0) &bt BT(1) &kp C_VOL_DN &kp C_VOL_UP
                 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp HOME     &kp PG_UP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &none
                 &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT       &out OUT_USB &out OUT_BLE &kp LSHFT &kp LCTRL    &kp LALT     &kp LGUI
-                &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &kp END      &kp PG_DN    &caps_word &bt BT(0)    &bt BT(1)    &bt BT(2)     
-                                              &trans       &trans          &mkp LCLK &mkp MCLK &mkp RCLK 
+                &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &kp END      &kp PG_DN    &caps_word &bt BT(0)    &bt BT(1)    &bt BT(2)
+                                              &trans       &trans          &mkp LCLK &mkp MCLK &mkp RCLK
                 >;
         };
 
@@ -140,7 +142,7 @@
 
         tween_base_layer {
             bindings = <
-                &bootloader &none &none &none &to BAS_L
+                &to BAS_L &none &bootloader &none &to BAS_L
                 &none &none &none &none &none &none &none &none &none &none
                 &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHFT T    &none    &hmr LSHFT N   &hmr LCTRL E   &hmr LALT I   &hmr LGUI O  &none
                 &kp F   &kp P       &kp C        &kp D           &none    &kp H          &kp U          &kp Y         &kp QUOT     &none
@@ -150,7 +152,7 @@
 
         tween_navigation_layer {
             bindings = <
-                &bootloader &none &none &none &to BAS_L
+                &to BAS_L &none &bootloader &none &to BAS_L
                 &none &none &none &none &none &none &none &none &none &none
                  &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT      &none &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
                 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none &kp HOME  &kp PG_UP &kp PG_DN &kp END &none
@@ -160,7 +162,7 @@
 
         tween_number_layer {
             bindings = <
-                &bootloader &none &none &none &to BAS_L
+                &to BAS_L &none &bootloader &none &to BAS_L
                 &none &none &none &none &none &none &none &none &none &none
                 ASI(EQUAL) AS(N4) AS(N5) AS(N6) &none &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
                  AS(MINUS) AS(N1) AS(N2) AS(N3) &none  AS(N7)    AS(N8)    AS(N9)   AS(N0) &none
@@ -177,6 +179,37 @@
                 &kp PSCRN &kp SPACE &none &kp E &none
                 >;
         };
+
+        tween_selection_layer {
+            bindings = <
+                &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &none  &none  &none  &to DONE_TW_L  &none  &none  &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans
+                >;
+        };
+
+        tween_diablo_layer {
+            bindings = <
+                &to BAS_L &none &bootloader &none &to BAS_TW_L
+                &none &none &none &none &none &none &none &none &none &none
+                &kp N1 &kp N2 &kp N3 &kp N4 &none &kp O &kp P &kp  &kp RET &none
+                &kp LCTRL &kp I &kp X &kp C &none &kp Z &kp J &kp KP_N0 &kp KP_N3   &none
+                &kp LSHFT &lt DTWO_TW_L ESC &none &to GAME_L &to BAS_TW_L
+                >;
+        };
+
+        tween_diablo_ii_layer {
+            bindings = <
+                &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &kp N5 &kp N6 &kp N7 &kp N8 &none &kp N9 &kp N0 &kp EQUAL &trans &trans
+                &kp Q &kp W &kp E &kp R &none &kp GRAVE &none &none &none   &none
+                &trans &trans &trans &trans &trans
+                >;
+        };
+
     };
 
     combos {
@@ -212,14 +245,15 @@
 
         combo_tw_q         { timeout-ms = <50>; key-positions = <26 28>; bindings = <&kp Q>; layers = <BAS_TW_L>; };
         combo_tw_tab       { timeout-ms = <50>; key-positions = <16 18>; bindings = <&kp TAB>; layers = <BAS_TW_L>; };
-        combo_tw_grave     { timeout-ms = <50>; key-positions = <25 27>; bindings = <&kp GRAVE>; layers = <BAS_TW_L>; };
+        combo_tw_return    { timeout-ms = <50>; key-positions = <30 32>; bindings = <&kp RET>; layers = <BAS_TW_L>; };
 
         combo_tw_esc       { timeout-ms = <50>; key-positions = <15 18>; bindings = <&kp ESC>; layers = <BAS_TW_L>; };
         combo_tw_capslock  { timeout-ms = <50>; key-positions = <16 22>; bindings = <&kp CAPS>; layers = <BAS_TW_L>; };
         combo_tw_capsword  { timeout-ms = <50>; key-positions = <18 20>; bindings = <&caps_word>; layers = <BAS_TW_L>; };
         combo_tw_delete    { timeout-ms = <50>; key-positions = <20 22>; bindings = <&kp DEL>; layers = <BAS_TW_L>; };
         combo_tw_back_word { timeout-ms = <50>; key-positions = <20 23>; bindings = <&kp LC(BKSP)>; layers = <BAS_TW_L>; };
-        combo_tw_semicolon { timeout-ms = <50>; key-positions = <30 32>; bindings = <&kp SEMI>; layers = <BAS_TW_L>; };
+        combo_tw_semicolon { timeout-ms = <50>; key-positions = <32 39>; bindings = <&kp SEMI>; layers = <BAS_TW_L>; };
+        combo_tw_layer { timeout-ms = <50>; key-positions = <38 39>; bindings = <&mo SEL_TW_L>; layers = <BAS_TW_L>; };
     };
 
 /*  0  1  2  3   4
