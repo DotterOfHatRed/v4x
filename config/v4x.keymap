@@ -205,7 +205,7 @@
                 &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &kp N5 &kp N6 &kp N7 &kp N8 &none &kp N9 &kp N0 &kp EQUAL &trans &trans
-                &kp Q &kp W &kp E &kp R &none &kp GRAVE &none &none &none   &none
+                &kp INS &kp EQUAL &kp N0 &kp N9 &none &kp GRAVE &none &none &none   &none
                 &trans &trans &trans &trans &trans
                 >;
         };
