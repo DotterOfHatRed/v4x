@@ -255,9 +255,9 @@
         combo_tw_layer     { timeout-ms = <50>; key-positions = <38 39>; bindings = <&mo SEL_TW_L>; layers = <BAS_TW_L>; };
 
         combo_tw_d2_pot1   { timeout-ms = <50>; key-positions = <15 25>; bindings = <&kp Q>; layers = <DONE_TW_L>; };
-        combo_tw_d2_pot1   { timeout-ms = <50>; key-positions = <16 26>; bindings = <&kp W>; layers = <DONE_TW_L>; };
-        combo_tw_d2_pot1   { timeout-ms = <50>; key-positions = <17 27>; bindings = <&kp E>; layers = <DONE_TW_L>; };
-        combo_tw_d2_pot1   { timeout-ms = <50>; key-positions = <18 28>; bindings = <&kp R>; layers = <DONE_TW_L>; };
+        combo_tw_d2_pot2   { timeout-ms = <50>; key-positions = <16 26>; bindings = <&kp W>; layers = <DONE_TW_L>; };
+        combo_tw_d2_pot3   { timeout-ms = <50>; key-positions = <17 27>; bindings = <&kp E>; layers = <DONE_TW_L>; };
+        combo_tw_d2_pot4   { timeout-ms = <50>; key-positions = <18 28>; bindings = <&kp R>; layers = <DONE_TW_L>; };
     };
 
 /*  0  1  2  3   4
