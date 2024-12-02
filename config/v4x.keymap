@@ -51,30 +51,39 @@
         hml: hrm_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
         hmr: hrm_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            flavor = "tap-preferred";
             tapping_term_ms = <200>;
             quick_tap_ms = <100>;
-            flavor = "tap-preferred";
+        };
+        dht: diablo_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
+            flavor = "hold-preferred";
+            tapping_term_ms = <200>;
+            retro-tap;
+
         };
     };
 
