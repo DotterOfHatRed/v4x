@@ -77,7 +77,7 @@
             tapping_term_ms = <200>;
             quick_tap_ms = <100>;
         };
-        dht: diablo_hold_tap {
+        ght: gamers_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
