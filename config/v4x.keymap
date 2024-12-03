@@ -81,8 +81,16 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             flavor = "hold-preferred";
-            tapping_term_ms = <200>;
+            tapping_term_ms = <150>;
         };
+        fshr: f_shift_r {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp R>;
+            mods = <(MOD_LSFT)>;
+            keep_mods = <(MOD_LSFT)>;
+        };
+
     };
 
     keymap {
@@ -191,9 +199,19 @@
             bindings = <
                 &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &none  &none  &none  &to DONE_TW_L  &none  &none  &trans &trans &trans &trans
+                &none  &none  &to GONE_TW_L  &to DONE_TW_L  &none  &none  &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans
+                >;
+        };
+
+        tween_gaming_layer {
+            bindings = <
+                &to BAS_L &none &bootloader &none &to BAS_TW_L
+                &none &none &none &none &none &none &none &none &none &none
+                &kp TAB &kp Q &kp W &kp E &none &none &none &none &none &none
+                &kp LSHFT &kp A &kp S &kp D &none &none &none &none &none &none
+                &lt GNUM_TW_L C &kp SPACE &none &to DONE_TW_L &to BAS_TW_L
                 >;
         };
 
@@ -208,13 +226,13 @@
             // IWC
         };
 
-        tween_diablo_ii_layer {
+        tween_gaming_number_layer {
             bindings = <
                 &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &kp N1 &kp N2 &kp N3 &kp N4 &none &kp N9 &kp N0 &kp EQUAL &trans &trans
-                &dht INS N5 &dht EQUAL N6 &dht N0 N7 &dht N9 N8 &none &kp GRAVE &none &none &none   &none
-                &trans &trans &trans &trans &trans
+                &kp N1 &kp N2 &kp N3 &kp N4 &none                     &none &none &none &trans &trans
+                &ght N9 N5 &ght N0 N6 &ght EQUAL N7 &ght INS N8 &none &none &none &none &none   &none
+                &trans &kp GRAVE &trans &trans &trans
                 >;
         };
 
@@ -226,14 +244,14 @@
         combo_del { timeout-ms = <50>; key-positions = <34 39>; bindings = <&kp DEL>; layers = <BAS_L>; };
 
         combo_tw_w         { timeout-ms = <50>; key-positions = <15 16>; bindings = <&kp W>; layers = <BAS_TW_L>; };
-        combo_tw_g         { timeout-ms = <50>; key-positions = <16 17>; bindings = <&kp G>; layers = <BAS_TW_L>; };
-        combo_tw_b         { timeout-ms = <50>; key-positions = <17 18>; bindings = <&kp B>; layers = <BAS_TW_L>; };
+        combo_tw_g         { timeout-ms = <50>; key-positions = <16 17>; bindings = <&kp G>; layers = <BAS_TW_L GONE_TW_L>; };
+        combo_tw_b         { timeout-ms = <50>; key-positions = <17 18>; bindings = <&kp B>; layers = <BAS_TW_L GONE_TW_L>; };
         combo_tw_j         { timeout-ms = <50>; key-positions = <20 21>; bindings = <&kp J>; layers = <BAS_TW_L>; };
         combo_tw_l         { timeout-ms = <50>; key-positions = <21 22>; bindings = <&kp L>; layers = <BAS_TW_L>; };
         combo_tw_m         { timeout-ms = <50>; key-positions = <22 23>; bindings = <&kp M>; layers = <BAS_TW_L>; };
 
-        combo_tw_z         { timeout-ms = <50>; key-positions = <26 27>; bindings = <&kp Z>; layers = <BAS_TW_L>; };
-        combo_tw_x         { timeout-ms = <50>; key-positions = <27 28>; bindings = <&kp X>; layers = <BAS_TW_L>; };
+        combo_tw_z         { timeout-ms = <50>; key-positions = <26 27>; bindings = <&kp Z>; layers = <BAS_TW_L GONE_TW_L>; };
+        combo_tw_x         { timeout-ms = <50>; key-positions = <27 28>; bindings = <&kp X>; layers = <BAS_TW_L GONE_TW_L>; };
         combo_tw_comma     { timeout-ms = <50>; key-positions = <30 31>; bindings = <&kp COMMA>; layers = <BAS_TW_L>; };
         combo_tw_dot       { timeout-ms = <50>; key-positions = <31 32>; bindings = <&kp DOT>; layers = <BAS_TW_L>; };
 
@@ -247,7 +265,7 @@
         combo_tw_angle_r   { timeout-ms = <50>; key-positions = <22 30>; bindings = <&kp GT>; layers = <BAS_TW_L>; };
 
         combo_tw_k         { timeout-ms = <50>; key-positions = <21 30>; bindings = <&kp K>; layers = <BAS_TW_L>; };
-        combo_tw_v         { timeout-ms = <50>; key-positions = <17 28>; bindings = <&kp V>; layers = <BAS_TW_L>; };
+        combo_tw_v         { timeout-ms = <50>; key-positions = <17 28>; bindings = <&kp V>; layers = <BAS_TW_L GONE_TW_L>; };
         combo_tw_grave     { timeout-ms = <50>; key-positions = <16 27>; bindings = <&kp GRAVE>; layers = <BAS_TW_L>; };
         combo_tw_slash     { timeout-ms = <50>; key-positions = <22 31>; bindings = <&kp FSLH>; layers = <BAS_TW_L>; };
 
@@ -262,6 +280,10 @@
         combo_tw_semicolon { timeout-ms = <50>; key-positions = <30 32>; bindings = <&kp SEMI>; layers = <BAS_TW_L>; };
         combo_tw_layer     { timeout-ms = <50>; key-positions = <38 39>; bindings = <&mo SEL_TW_L>; layers = <BAS_TW_L>; };
 
+        combo_tw_game_esc  { timeout-ms = <50>; key-positions = <15 16>; bindings = <&kp ESC>; layers = <GONE_TW_L>; };
+        combo_tw_game_lctl { timeout-ms = <50>; key-positions = <35 36>; bindings = <&kp LCTRL>; layers = <GONE_TW_L>; };
+        combo_tw_game_lalt { timeout-ms = <50>; key-positions = <28 36>; bindings = <&kp LALT>; layers = <GONE_TW_L>; };
+        combo_tw_game_fshr { timeout-ms = <50>; key-positions = <18 28>; bindings = <&fshr>; layers = <GONE_TW_L>; };
 //        combo_tw_d2_pot1   { timeout-ms = <50>; key-positions = <15 25>; bindings = <&kp Q>; layers = <DONE_TW_L>; };
 //        combo_tw_d2_pot2   { timeout-ms = <50>; key-positions = <16 26>; bindings = <&kp W>; layers = <DONE_TW_L>; };
 //        combo_tw_d2_pot3   { timeout-ms = <50>; key-positions = <17 27>; bindings = <&kp E>; layers = <DONE_TW_L>; };
