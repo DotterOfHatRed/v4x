@@ -23,8 +23,9 @@
 #define NUM_TW_L 8
 #define FUN_TW_L 9
 #define SEL_TW_L 10
-#define DONE_TW_L 11
-#define DTWO_TW_L 12
+#define GONE_TW_L 11
+#define DONE_TW_L 12
+#define GNUM_TW_L 13
 
 
 /*  0  1  2  3   4
@@ -221,7 +222,7 @@
                 &none &none &none &none &none &none &none &none &none &none
                 &kp Q &kp W &kp E &kp R &none &kp O &kp P &kp H &kp RET &none
                 &kp LCTRL &kp I &kp X &kp C &none &kp Z &kp J &kp KP_N0 &kp KP_N3   &none
-                &lt DTWO_TW_L ESC &kp LSHFT &none &to GAME_L &to BAS_TW_L
+                &lt GNUM_TW_L ESC &kp LSHFT &none &to GAME_L &to BAS_TW_L
                 >;
             // IWC
         };
