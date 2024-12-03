@@ -89,7 +89,7 @@
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp R>;
             mods = <(MOD_LSFT)>;
-            keep_mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
 
     };
